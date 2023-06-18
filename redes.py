@@ -1,26 +1,27 @@
-import json
 import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
 
-# Lista com os nomes dos arquivos CSV
-arquivos_csv = ["datas/acid_vas_cerebral.csv", "datas/tabagismo.csv", "datas/infarto_mio.csv", "datas/renal.csv","datas/sedentarismo.csv","datas/sobrepeso.csv"]
-names = ['acid_vas_cerebral', 'tabagismo', 'infarto_mio', 'renal', 'sedentarismo', 'sobrepeso']
-# Lista para armazenar os dataframes
-dataframes = []
+# Ler a tabela e selecionar apenas as colunas necessárias
+df = pd.read_csv('data_diseases.csv', delimiter='\t')
 
-# Loop para importar cada arquivo CSV e convertê-lo em dataframe
-for i,arquivo in enumerate(arquivos_csv):
-    # Importar o arquivo CSV em um dataframe
-    dataframe = pd.read_csv(arquivo,encoding='latin-1')
-#     # Adicionar o dataframe à lista de dataframes
-    dataframes.append(dataframe)
-#     json_data = dataframe.to_json()
-#     with open(f'{names[i]}.json', 'w') as file:
-#         file.write(json_data)
-print('Em São João del Rei\n')
+# Criar um grafo direcionado
+G = nx.DiGraph()
 
-# for name in names:
+# Iterar sobre as linhas da tabela
+for _, row in df.iterrows():
+    row = row.values[0].split(',')
+    doenca = row[4]
+    sim = row[1]
+    
+    # Adicionar aresta entre doença e sim
+    G.add_edge(doenca, 'Diabetes', weight=sim)
 
-#     with open(f'jsons/{name}.json', 'r') as file:
-#         json_data = json.load(file)
-#         teste = json_data["Sistema de Cadastramento e Acompanhamento de Hipertensos e Diab\u00e9ticos - Minas Gerais"]["592"].split(';')
-#         print(f'Tem diabetes e {name} {teste[1]} , tem diabetes e não tem {name} {teste[2]} num total de {teste[3]}\n')
+# Plotar o grafo
+pos = nx.spring_layout(G, seed=42)
+edge_labels = nx.get_edge_attributes(G, 'weight')
+nx.draw_networkx(G, pos, with_labels=True, node_size=1000, node_color='lightblue', font_size=10)
+nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8)
+plt.title('Rede de Relação entre Doenças e Sim (Diabetes)')
+plt.axis('off')
+plt.show()
