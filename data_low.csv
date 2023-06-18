@@ -1,0 +1,25 @@
+Cidade,Sim,Não,Total,Doenças
+ABADIA DOS DOURADOS,-,2,2,acid_vas_cerebral
+ABAETE,4,92,96,acid_vas_cerebral
+ACAIACA,1,4,5,acid_vas_cerebral
+ACUCENA,-,24,24,acid_vas_cerebral
+ABADIA DOS DOURADOS,-,2,2,tabagismo
+ABAETE,37,59,96,tabagismo
+ACAIACA,-,5,5,tabagismo
+ACUCENA,3,21,24,tabagismo
+ABADIA DOS DOURADOS,-,2,2,infarto_mio
+ABAETE,4,92,96,infarto_mio
+ACAIACA,-,5,5,infarto_mio
+ACUCENA,1,23,24,infarto_mio
+ABADIA DOS DOURADOS,-,2,2,renal
+ABAETE,5,91,96,renal
+ACAIACA,1,4,5,renal
+ACUCENA,2,22,24,renal
+ABADIA DOS DOURADOS,-,2,2,sedentarismo
+ABAETE,47,49,96,sedentarismo
+ACAIACA,-,5,5,sedentarismo
+ACUCENA,4,20,24,sedentarismo
+ABADIA DOS DOURADOS,-,2,2,sobrepeso
+ABAETE,34,62,96,sobrepeso
+ACAIACA,1,4,5,sobrepeso
+ACUCENA,8,16,24,sobrepeso

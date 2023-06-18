@@ -682,7 +682,6 @@ VIRGEM DA LAPA,-,5,5,acid_vas_cerebral
 VIRGINIA,-,1,1,acid_vas_cerebral
 VOLTA GRANDE,-,2,2,acid_vas_cerebral
 WENCESLAU BRAZ,-,7,7,acid_vas_cerebral
-Total,896,35739,36635,acid_vas_cerebral
 ABADIA DOS DOURADOS,-,2,2,tabagismo
 ABAETE,37,59,96,tabagismo
 ACAIACA,-,5,5,tabagismo
@@ -1366,7 +1365,6 @@ VIRGEM DA LAPA,-,5,5,tabagismo
 VIRGINIA,-,1,1,tabagismo
 VOLTA GRANDE,-,2,2,tabagismo
 WENCESLAU BRAZ,1,6,7,tabagismo
-Total,7494,29141,36635,tabagismo
 ABADIA DOS DOURADOS,-,2,2,infarto_mio
 ABAETE,4,92,96,infarto_mio
 ACAIACA,-,5,5,infarto_mio
@@ -2050,7 +2048,6 @@ VIRGEM DA LAPA,-,5,5,infarto_mio
 VIRGINIA,-,1,1,infarto_mio
 VOLTA GRANDE,-,2,2,infarto_mio
 WENCESLAU BRAZ,-,7,7,infarto_mio
-Total,1093,35542,36635,infarto_mio
 ABADIA DOS DOURADOS,-,2,2,renal
 ABAETE,5,91,96,renal
 ACAIACA,1,4,5,renal
@@ -2734,7 +2731,6 @@ VIRGEM DA LAPA,-,5,5,renal
 VIRGINIA,-,1,1,renal
 VOLTA GRANDE,-,2,2,renal
 WENCESLAU BRAZ,-,7,7,renal
-Total,2110,34525,36635,renal
 ABADIA DOS DOURADOS,-,2,2,sedentarismo
 ABAETE,47,49,96,sedentarismo
 ACAIACA,-,5,5,sedentarismo
@@ -3418,7 +3414,6 @@ VIRGEM DA LAPA,1,4,5,sedentarismo
 VIRGINIA,-,1,1,sedentarismo
 VOLTA GRANDE,2,-,2,sedentarismo
 WENCESLAU BRAZ,4,3,7,sedentarismo
-Total,15093,21542,36635,sedentarismo
 ABADIA DOS DOURADOS,-,2,2,sobrepeso
 ABAETE,34,62,96,sobrepeso
 ACAIACA,1,4,5,sobrepeso
@@ -4102,4 +4097,3 @@ VIRGEM DA LAPA,-,5,5,sobrepeso
 VIRGINIA,-,1,1,sobrepeso
 VOLTA GRANDE,-,2,2,sobrepeso
 WENCESLAU BRAZ,1,6,7,sobrepeso
-Total,13643,22992,36635,sobrepeso
